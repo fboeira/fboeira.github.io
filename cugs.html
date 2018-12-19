@@ -1,0 +1,537 @@
+<!DOCTYPE HTML>
+<!--
+	Strata by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Felipe Boeira</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<div class="inner">
+					<a href="#" class="image avatar"><img src="images/avatar.jpg" alt="" /></a>
+					<h1><strong>Felipe Boeira</strong><br />
+					Information Security Researcher<br />
+					PhD Student</h1>
+				</div>
+			</header>
+
+		<!-- Main -->
+			<div id="main">
+
+				<!-- One -->
+					<section id="one">
+						<header class="major">
+							<h2>About Me</h2>
+						</header>
+						<p>I am an information security researcher currently enrolled as a PhD student in the Computer Science Graduate School (CUGS) in Link&ouml;ping University, Sweden. I have worked with research topics related to mobile, wearable and IoT security, and I am currently focused on Vehicular Ad Hoc Networks (VANETs) security.</p>
+					<!-- 	<ul class="actions">
+							<li><a href="#" class="button">Learn More</a></li>
+						</ul> -->
+					</section>
+
+				<!-- Two -->
+					<section id="two">
+				<h1>Secure Communication Mechanisms for Trustworthy Vehicular Coordination</h1>
+
+<h2>Background</h2>
+
+<p>Advanced driver assistance systems (ADAS) are becoming increasingly
+sophisticated and connected.  Emerging applications include vehicular
+platoons, collision avoidance, and emergency vehicle awareness. The
+next generation of vehicular applications need to consider a holistic
+perspective on traffic flows in order to meet the increasing demands
+on sustainable transport and user safety and comfort. However, such
+coordinated mobility between vehicles requires robust and secure
+communication primitives. </p>
+
+<p>Current vehicular communication standards provide some support for
+security mechanisms such as the ability to sign messages. However, the
+increasing amount of software and network interfaces of modern
+vehicles make them potentially vulnerable to malware and other forms
+of cyberattacks. Therefore, establishing real trust between vehicles
+remains an open problem. This is a critical issue since the safety of
+the participating vehicles might depend on the accuracy and
+truthfulness of information from other entities. </p>
+
+<p>Recently, Chen et al. [4] presented an example of what can occur if
+the design of connected vehicular applications has not sufficiently
+accounted for the possibility of false information. The authors
+analyse the Intelligent Traffic Signal System (I-SIG), which is
+currently being launched as a pilot application by the US department
+of transportation. The authors show that by spoofing messages, a
+single attacker is able to disturb the signalling control algorithm,
+resulting in massive traffic jams. Moreover, our recent work [2]
+demonstrates that the ability to create fake identities coupled with
+false message contents can cause severe collisions for vehicular
+platooning scenarios.</p>
+
+<p>Common for these works is that they consider attacks that use
+incorrect information regarding speed and location of one or multiple
+vehicles in the area. Counteracting such attacks require some form of
+location verification. There is a wide range of works that try to
+tackle this long-standing problem using various assumptions. For
+example, the work by Yan et al. [5] use antenna arrays to verify that
+claimed locations are consistent with the angle at which signals
+arrive to a base station. However, given the inherent uncertainty
+associated with radio propagation and the potentially complex attack
+scenarios, collaborative algorithms are needed to differentiate false
+alarms from real attacks. Existing work for collaborative location
+verification such as that by Zhu and Cao [6] are not adapted for the
+high-speed scenarios associated with vehicular applications.</p>
+
+
+<h2>Problem description</h2>
+
+<p>The purpose of this project is to investigate secure communication
+mechanisms that allow trust to be established between
+vehicles. Examples of such mechanism are the verification of the
+physical location of nearby vehicles and also the sharing of that
+information within the group to enable trust
+propagation. Key challenges that will be considered include limited
+and congestion-prone communication channels, lack of ubiquitous
+communication infrastructure, and the possibility of reputation
+attacks from malicious entities.</p>
+
+
+<h2>Planned approach</h2>
+
+<p>Some initial steps to analyse the problem at hand have already been
+taken in the project with regards to understanding the potential
+impact of position falsification attacks in platooning applications
+[1-3]. The immediate next phase is to establish
+mechanisms that are able to detect and mitigate such location
+falsification attacks. This requires making use of a combination of
+input data such as local sensors, infrastructure capabilities (e.g., the
+localisation capabilities provided by 5G technology), and the sharing
+of that information among the vehicles.</p>
+
+<p>
+Moreover, much more work is needed to understand the performance and
+impact of such security mechanisms on the communication system and its
+ability to enhance vehicular safety. It is clear that cryptographic
+primitives will have an important role to play to provide trustworthy
+communication between vehicles. The project will investigate the trade-off between
+the security and the frequency and range of messages that can be
+exchanged between vehicles (especially in dense scenarios) due to the
+extra overhead induced by these methods. 
+</p>
+
+<p>The mechanisms developed in the project will be implemented and
+ evaluated using simulation-based tools for vehicular
+ communication. Moreover, fully understanding how groups of vehicles
+ can establish mutually verifiable information requires formulating
+ suitable theoretical modelling frameworks for this purpose.</p>
+
+<h2>References</h2>
+<ul>
+ <li>[1] M. Asplund, <b>Model-based Membership Verification in Vehicular
+     Platoons</b>, in <i>Dependable Systems and Networks Workshop
+     (DSN-W), on Safety and Security of Intelligent Vehicles (SSIV
+     2015)</i>,
+     IEEE. doi: <a href="http://dx.doi.org/10.1109/DSN-W.2015.21">10.1109/DSN-W.2015.21
+     [<a href="http://www.ida.liu.se/labs/rtslab/publications/2015/Asplund_SSIV15_final.pdf">PDF</a>, <a href="http://urn.kb.se/resolve?urn=urn:nbn:se:liu:diva-123682">DiVA@LiU</a>]</li>
+ <li>[2] Felipe Boeira, Marinho P. Barcellos, Edison Pignaton de Freitas,
+ Alexey Vinel, and Mikael Asplund <b>Effects of Colluding Sybil Nodes
+ in Message Falsification Attacks for Vehicular Platooning</b>, in
+ proceedings of <i>IEEE Vehicular Networking Conference (VNC)</i>,
+ 2017. doi: <a href="http://dx.doi.org/10.1109/VNC.2017.8275641">10.1109/VNC.2017.8275641</a>
+ [<a href="http://www.ida.liu.se/labs/rtslab/publications/2017/BoeiraEtAl_VNC2017.pdf">PDF</a>]</li>
+<li>[3] Felipe Boeira, Marinho P. Barcellos, Edison Pignaton de Freitas,
+Mikael Asplund and Alexey Vinel, <b>On the Impact of Sybil Attacks in
+Cooperative Driving Scenarios</b>, in proceedings of <i>IFIP
+Networking 2017 Conference and Workshops</i></li>
+<li>[4] Qi Alfred Chen, Yucheng Yin, Yiheng Feng, Z. Morley Mao, Henry X. Liu, <b>Exposing Congestion Attack on Emerging Connected Vehicle based
+Traffic Signal Control</b>, Network and Distributed System Security
+Symposium (NDSS), DOI: 10.14722/ndss.2018.23236</li>
+<li>[5] S. Yan, R. Malaney, I. Nevat, and G. W. Peters. 2016. <b>Location Verification Systems for VANETs in Rician Fading Channels.</b>
+IEEE Transactions on Vehicular Technology 65, 7 (July 2016), 5652â€“5664. https://doi.org/10.1109/TVT.2015.2453160</li>
+<li>[6] Z. Zhu and G. Cao, <b>APPLAUS: A Privacy-Preserving Location Proof Updating System for location-based services</b>, 2011 Proceedings IEEE INFOCOM, Shanghai, 2011, pp. 1889-1897.
+doi: 10.1109/INFCOM.2011.5934991</li>
+										F. Boeira, M. Asplund, and M. P. Barcellos, <b>"Mitigating Position Falsification Attacks in Vehicular Platooning,"</b> in Vehicular Networking Conference (VNC), IEEE, 2018.
+  					F. Boeira, M. Asplund, and M. P. Barcellos, <b>"Vouch: A Secure Proof-of-Location Scheme for VANETs,"</b> In Proceedings of the 21st ACM International Conference on Modeling, Analysis and Simulation of Wireless and Mobile Systems (MSWIM '18). ACM, 241-248.
+
+</ul>
+</section>
+					<section id="contact">
+						<h2>Get In Touch</h2>
+						<p>Feel free to contact me using the information below:</p>
+
+						<div class="row">
+							<div class=" col-12-small">
+								<ul class="labeled-icons">
+									<li>
+										<h3 class="icon fa-home"><span class="label">Address</span></h3>
+										Dept. of Computer and Information Science</br>
+										Link&ouml;ping University</br>
+										S-581 83 Link&ouml;ping, Sweden</br>
+										B Building, Office 3B:436
+									</li>
+<!--<li>
+										<h3 class="icon fa-mobile"><span class="label">Phone</span></h3>
+										000-000-0000
+									</li>
+-->
+
+									<li>
+										<h3 class="icon fa-envelope-o"><span class="label">Email</span></h3>
+										<script>var _0x8cb6=["\x66\x65\x6C\x69\x70\x65\x2E\x62\x6F\x65\x69\x72\x61\x28\x61\x74\x29\x6C\x69\x75\x2E\x73\x65","\x77\x72\x69\x74\x65"];document[_0x8cb6[1]](_0x8cb6[0])</script>
+									</li>
+									<li>
+										<h3 class="icon fa-linkedin"><span class="label">Linkedin</span></h3><a href="https://www.linkedin.com/in/fboeira/">Linkedin Profile</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</section>
+
+				<!-- Four -->
+				<!--
+					<section id="four">
+						<h2>Elements</h2>
+
+						<section>
+							<h4>Text</h4>
+							<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
+							This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
+							This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
+							<hr />
+							<header>
+								<h4>Heading with a Subtitle</h4>
+								<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
+							</header>
+							<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
+							<header>
+								<h5>Heading with a Subtitle</h5>
+								<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
+							</header>
+							<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
+							<hr />
+							<h2>Heading Level 2</h2>
+							<h3>Heading Level 3</h3>
+							<h4>Heading Level 4</h4>
+							<h5>Heading Level 5</h5>
+							<h6>Heading Level 6</h6>
+							<hr />
+							<h5>Blockquote</h5>
+							<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
+							<h5>Preformatted</h5>
+							<pre><code>i = 0;
+
+while (!deck.isInOrder()) {
+print 'Iteration ' + i;
+deck.shuffle();
+i++;
+}
+
+print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
+						</section>
+
+						<section>
+							<h4>Lists</h4>
+							<div class="row">
+								<div class="col-6 col-12-xsmall">
+									<h5>Unordered</h5>
+									<ul>
+										<li>Dolor pulvinar etiam magna etiam.</li>
+										<li>Sagittis adipiscing lorem eleifend.</li>
+										<li>Felis enim feugiat dolore viverra.</li>
+									</ul>
+									<h5>Alternate</h5>
+									<ul class="alt">
+										<li>Dolor pulvinar etiam magna etiam.</li>
+										<li>Sagittis adipiscing lorem eleifend.</li>
+										<li>Felis enim feugiat dolore viverra.</li>
+									</ul>
+								</div>
+								<div class="col-6 col-12-xsmall">
+									<h5>Ordered</h5>
+									<ol>
+										<li>Dolor pulvinar etiam magna etiam.</li>
+										<li>Etiam vel felis at lorem sed viverra.</li>
+										<li>Felis enim feugiat dolore viverra.</li>
+										<li>Dolor pulvinar etiam magna etiam.</li>
+										<li>Etiam vel felis at lorem sed viverra.</li>
+										<li>Felis enim feugiat dolore viverra.</li>
+									</ol>
+									<h5>Icons</h5>
+									<ul class="icons">
+										<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+										<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+										<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+										<li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
+										<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
+										<li><a href="#" class="icon fa-tumblr"><span class="label">Tumblr</span></a></li>
+									</ul>
+								</div>
+							</div>
+							<h5>Actions</h5>
+							<ul class="actions">
+								<li><a href="#" class="button primary">Default</a></li>
+								<li><a href="#" class="button">Default</a></li>
+							</ul>
+							<ul class="actions small">
+								<li><a href="#" class="button primary small">Small</a></li>
+								<li><a href="#" class="button small">Small</a></li>
+							</ul>
+							<div class="row">
+								<div class="col-6 col-12-small">
+									<ul class="actions stacked">
+										<li><a href="#" class="button primary">Default</a></li>
+										<li><a href="#" class="button">Default</a></li>
+									</ul>
+								</div>
+								<div class="col-6 col-12-small">
+									<ul class="actions stacked">
+										<li><a href="#" class="button primary small">Small</a></li>
+										<li><a href="#" class="button small">Small</a></li>
+									</ul>
+								</div>
+								<div class="col-6 col-12-small">
+									<ul class="actions stacked">
+										<li><a href="#" class="button primary fit">Default</a></li>
+										<li><a href="#" class="button fit">Default</a></li>
+									</ul>
+								</div>
+								<div class="col-6 col-12-small">
+									<ul class="actions stacked">
+										<li><a href="#" class="button primary small fit">Small</a></li>
+										<li><a href="#" class="button small fit">Small</a></li>
+									</ul>
+								</div>
+							</div>
+						</section>
+
+						<section>
+							<h4>Table</h4>
+							<h5>Default</h5>
+							<div class="table-wrapper">
+								<table>
+									<thead>
+										<tr>
+											<th>Name</th>
+											<th>Description</th>
+											<th>Price</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>Item One</td>
+											<td>Ante turpis integer aliquet porttitor.</td>
+											<td>29.99</td>
+										</tr>
+										<tr>
+											<td>Item Two</td>
+											<td>Vis ac commodo adipiscing arcu aliquet.</td>
+											<td>19.99</td>
+										</tr>
+										<tr>
+											<td>Item Three</td>
+											<td> Morbi faucibus arcu accumsan lorem.</td>
+											<td>29.99</td>
+										</tr>
+										<tr>
+											<td>Item Four</td>
+											<td>Vitae integer tempus condimentum.</td>
+											<td>19.99</td>
+										</tr>
+										<tr>
+											<td>Item Five</td>
+											<td>Ante turpis integer aliquet porttitor.</td>
+											<td>29.99</td>
+										</tr>
+									</tbody>
+									<tfoot>
+										<tr>
+											<td colspan="2"></td>
+											<td>100.00</td>
+										</tr>
+									</tfoot>
+								</table>
+							</div>
+
+							<h5>Alternate</h5>
+							<div class="table-wrapper">
+								<table class="alt">
+									<thead>
+										<tr>
+											<th>Name</th>
+											<th>Description</th>
+											<th>Price</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>Item One</td>
+											<td>Ante turpis integer aliquet porttitor.</td>
+											<td>29.99</td>
+										</tr>
+										<tr>
+											<td>Item Two</td>
+											<td>Vis ac commodo adipiscing arcu aliquet.</td>
+											<td>19.99</td>
+										</tr>
+										<tr>
+											<td>Item Three</td>
+											<td> Morbi faucibus arcu accumsan lorem.</td>
+											<td>29.99</td>
+										</tr>
+										<tr>
+											<td>Item Four</td>
+											<td>Vitae integer tempus condimentum.</td>
+											<td>19.99</td>
+										</tr>
+										<tr>
+											<td>Item Five</td>
+											<td>Ante turpis integer aliquet porttitor.</td>
+											<td>29.99</td>
+										</tr>
+									</tbody>
+									<tfoot>
+										<tr>
+											<td colspan="2"></td>
+											<td>100.00</td>
+										</tr>
+									</tfoot>
+								</table>
+							</div>
+						</section>
+
+						<section>
+							<h4>Buttons</h4>
+							<ul class="actions">
+								<li><a href="#" class="button primary">Primary</a></li>
+								<li><a href="#" class="button">Default</a></li>
+							</ul>
+							<ul class="actions">
+								<li><a href="#" class="button large">Large</a></li>
+								<li><a href="#" class="button">Default</a></li>
+								<li><a href="#" class="button small">Small</a></li>
+							</ul>
+							<ul class="actions fit">
+								<li><a href="#" class="button primary fit">Fit</a></li>
+								<li><a href="#" class="button fit">Fit</a></li>
+							</ul>
+							<ul class="actions fit small">
+								<li><a href="#" class="button primary fit small">Fit + Small</a></li>
+								<li><a href="#" class="button fit small">Fit + Small</a></li>
+							</ul>
+							<ul class="actions">
+								<li><a href="#" class="button primary icon fa-download">Icon</a></li>
+								<li><a href="#" class="button icon fa-download">Icon</a></li>
+							</ul>
+							<ul class="actions">
+								<li><span class="button primary disabled">Primary</span></li>
+								<li><span class="button disabled">Default</span></li>
+							</ul>
+						</section>
+
+						<section>
+							<h4>Form</h4>
+							<form method="post" action="#">
+								<div class="row gtr-uniform gtr-50">
+									<div class="col-6 col-12-xsmall">
+										<input type="text" name="demo-name" id="demo-name" value="" placeholder="Name" />
+									</div>
+									<div class="col-6 col-12-xsmall">
+										<input type="email" name="demo-email" id="demo-email" value="" placeholder="Email" />
+									</div>
+									<div class="col-12">
+										<select name="demo-category" id="demo-category">
+											<option value="">- Category -</option>
+											<option value="1">Manufacturing</option>
+											<option value="1">Shipping</option>
+											<option value="1">Administration</option>
+											<option value="1">Human Resources</option>
+										</select>
+									</div>
+									<div class="col-4 col-12-small">
+										<input type="radio" id="demo-priority-low" name="demo-priority" checked>
+										<label for="demo-priority-low">Low Priority</label>
+									</div>
+									<div class="col-4 col-12-small">
+										<input type="radio" id="demo-priority-normal" name="demo-priority">
+										<label for="demo-priority-normal">Normal Priority</label>
+									</div>
+									<div class="col-4 col-12-small">
+										<input type="radio" id="demo-priority-high" name="demo-priority">
+										<label for="demo-priority-high">High Priority</label>
+									</div>
+									<div class="col-6 col-12-small">
+										<input type="checkbox" id="demo-copy" name="demo-copy">
+										<label for="demo-copy">Email me a copy of this message</label>
+									</div>
+									<div class="col-6 col-12-small">
+										<input type="checkbox" id="demo-human" name="demo-human" checked>
+										<label for="demo-human">I am a human and not a robot</label>
+									</div>
+									<div class="col-12">
+										<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
+									</div>
+									<div class="col-12">
+										<ul class="actions">
+											<li><input type="submit" value="Send Message" class="primary" /></li>
+											<li><input type="reset" value="Reset" /></li>
+										</ul>
+									</div>
+								</div>
+							</form>
+						</section>
+
+						<section>
+							<h4>Image</h4>
+							<h5>Fit</h5>
+							<div class="box alt">
+								<div class="row gtr-50 gtr-uniform">
+									<div class="col-12"><span class="image fit"><img src="images/fulls/05.jpg" alt="" /></span></div>
+									<div class="col-4"><span class="image fit"><img src="images/thumbs/01.jpg" alt="" /></span></div>
+									<div class="col-4"><span class="image fit"><img src="images/thumbs/02.jpg" alt="" /></span></div>
+									<div class="col-4"><span class="image fit"><img src="images/thumbs/03.jpg" alt="" /></span></div>
+									<div class="col-4"><span class="image fit"><img src="images/thumbs/04.jpg" alt="" /></span></div>
+									<div class="col-4"><span class="image fit"><img src="images/thumbs/05.jpg" alt="" /></span></div>
+									<div class="col-4"><span class="image fit"><img src="images/thumbs/06.jpg" alt="" /></span></div>
+									<div class="col-4"><span class="image fit"><img src="images/thumbs/03.jpg" alt="" /></span></div>
+									<div class="col-4"><span class="image fit"><img src="images/thumbs/02.jpg" alt="" /></span></div>
+									<div class="col-4"><span class="image fit"><img src="images/thumbs/01.jpg" alt="" /></span></div>
+								</div>
+							</div>
+							<h5>Left &amp; Right</h5>
+							<p><span class="image left"><img src="images/avatar.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
+							<p><span class="image right"><img src="images/avatar.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
+						</section>
+
+					</section>
+				-->
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="inner">
+					<ul class="icons">
+						<li><a href="https://www.linkedin.com/in/fboeira/" class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>
+						<li><a href="#contact" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+					</ul>
+					<ul class="copyright">
+						<li>&copy; Felipe Boeira</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.poptrox.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
