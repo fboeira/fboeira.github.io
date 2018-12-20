@@ -68,7 +68,7 @@ analyse the Intelligent Traffic Signal System (I-SIG), which is
 currently being launched as a pilot application by the US department
 of transportation. The authors show that by spoofing messages, a
 single attacker is able to disturb the signalling control algorithm,
-resulting in massive traffic jams. Moreover, our recent work [2]
+resulting in massive traffic jams. Moreover, our work [2]
 demonstrates that the ability to create fake identities coupled with
 false message contents can cause severe collisions for vehicular
 platooning scenarios.</p>
@@ -85,7 +85,10 @@ associated with radio propagation and the potentially complex attack
 scenarios, collaborative algorithms are needed to differentiate false
 alarms from real attacks. Existing work for collaborative location
 verification such as that by Zhu and Cao [6] are not adapted for the
-high-speed scenarios associated with vehicular applications.</p>
+high-speed scenarios associated with vehicular applications. Recently, 
+we have proposed and evaluated a proof-of-location scheme [7, 8] that 
+provides location assurance using Inter-Vehicular Communication (IVC) 
+to distribute location proofs.</p>
 
 
 <h2>Problem description</h2>
@@ -106,12 +109,13 @@ attacks from malicious entities.</p>
 <p>Some initial steps to analyse the problem at hand have already been
 taken in the project with regards to understanding the potential
 impact of position falsification attacks in platooning applications
-[1-3]. The immediate next phase is to establish
-mechanisms that are able to detect and mitigate such location
-falsification attacks. This requires making use of a combination of
-input data such as local sensors, infrastructure capabilities (e.g., the
-localisation capabilities provided by 5G technology), and the sharing
-of that information among the vehicles.</p>
+[1-3]. In addition, a proof-of-location scheme was proposed [7] and 
+reaction strategies [8] to perform once misbehaviors are detected have been studied.
+
+The next phases consist on studying infrastructureless approaches to proving location using 
+our proposed scheme and evaluating it under additional scenarios, including dense roads, intersections, 
+and urban areas. It also becomes interesting to study how to handle contradicting information between proofs and 
+other sensors in the vehicle.</p>
 
 <p>
 Moreover, much more work is needed to understand the performance and
@@ -124,7 +128,7 @@ exchanged between vehicles (especially in dense scenarios) due to the
 extra overhead induced by these methods. 
 </p>
 
-<p>The mechanisms developed in the project will be implemented and
+<p>The mechanisms developed in the project were implemented and
  evaluated using simulation-based tools for vehicular
  communication. Moreover, fully understanding how groups of vehicles
  can establish mutually verifiable information requires formulating
@@ -155,8 +159,9 @@ Symposium (NDSS), DOI: 10.14722/ndss.2018.23236</li>
 IEEE Transactions on Vehicular Technology 65, 7 (July 2016), 5652â€“5664. https://doi.org/10.1109/TVT.2015.2453160</li>
 <li>[6] Z. Zhu and G. Cao, <b>APPLAUS: A Privacy-Preserving Location Proof Updating System for location-based services</b>, 2011 Proceedings IEEE INFOCOM, Shanghai, 2011, pp. 1889-1897.
 doi: 10.1109/INFCOM.2011.5934991</li>
-										F. Boeira, M. Asplund, and M. P. Barcellos, <b>"Mitigating Position Falsification Attacks in Vehicular Platooning,"</b> in Vehicular Networking Conference (VNC), IEEE, 2018.
-  					F. Boeira, M. Asplund, and M. P. Barcellos, <b>"Vouch: A Secure Proof-of-Location Scheme for VANETs,"</b> In Proceedings of the 21st ACM International Conference on Modeling, Analysis and Simulation of Wireless and Mobile Systems (MSWIM '18). ACM, 241-248.
+<li>[7] F. Boeira, M. Asplund, and M. P. Barcellos, <b>"Vouch: A Secure Proof-of-Location Scheme for VANETs,"</b> In Proceedings of the 21st ACM International Conference on Modeling, Analysis and Simulation of Wireless and Mobile Systems (MSWIM '18). ACM, 241-248.</li>
+<li>[8] F. Boeira, M. Asplund, and M. P. Barcellos, <b>"Mitigating Position Falsification Attacks in Vehicular Platooning,"</b> in Vehicular Networking Conference (VNC), IEEE, 2018.</li>
+  	
 
 </ul>
 </section>
